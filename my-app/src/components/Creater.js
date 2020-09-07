@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function CreateArea(props) {
+function Creater(props) {
   const [note, setNote] = useState({
     title: "",
     content: ""
@@ -35,6 +35,7 @@ function CreateArea(props) {
           value={note.title}
           placeholder="Title"
         />
+        <div class="box"></div>
         <textarea
           name="content"
           onChange={handleChange}
@@ -48,4 +49,4 @@ function CreateArea(props) {
   );
 }
 
-export default CreateArea;
+export default Creater;
