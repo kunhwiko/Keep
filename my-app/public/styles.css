@@ -7,7 +7,8 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #eee;
+  background: rgb(238, 238, 238);
+  background-image: url("https://www.transparenttextures.com/patterns/church.png");
   padding: 0 16px;
 }
 .box {
@@ -58,31 +59,29 @@ footer p {
 }
 .note button {
   position: relative;
-  left: 180px;
-  bottom: -25px;
-  background: #f5ba13;
-  color: rgb(0, 0, 0);
+  right: -10px;
+  float: right;
+  margin-right: 5px;
+  background : #fff;
+  color: #ccc;
   border: none;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   outline: none;
 }
 
-form {
+form.create-note {
   position: relative;
   width: 480px;
-  height : 200px;
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;
   border-radius: 7px;
   box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
-form input,
-form textarea {
+form.create-note input,
+form.create-note textarea {
   width: 100%;
   border: none;
   padding: 4px;
@@ -91,9 +90,9 @@ form textarea {
   font-family: inherit;
   resize: none;
 }
-form button {
+form.create-note button {
   position: absolute;
-  right: 18px;
+  right: 14px;
   bottom: -18px;
   background: #f5ba13;
   color: rgb(0, 0, 0);
@@ -104,4 +103,18 @@ form button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
+}
+.colorSelector {
+  position: absolute;
+  left: 18px;
+  bottom: 8px;
+  background: #f5ba13;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;  
 }

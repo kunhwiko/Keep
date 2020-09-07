@@ -6,7 +6,7 @@ function Footer() {
 
   return <footer>
     <p>
-      Copyright ⓒ {currentYear}
+      Copyright ⓒ Kun Hwi Ko {currentYear}
     </p>
   </footer>
 }
