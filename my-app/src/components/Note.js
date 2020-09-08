@@ -3,7 +3,7 @@ import DeleteIcon from "@material-ui/icons/Delete";
 
 function Note(props) {
   const [colorIndex, setColorIndex] = useState(0);
-  const colors = ["#f5ba13","#FFB6C1","#00FF00"];
+  const colors = ["#f5ba13","#FFB6C1","#93ed9b", "#93daed", "#cc93ed"];
 
   function handleClick() {
     props.onDelete(props.id);
@@ -11,7 +11,7 @@ function Note(props) {
 
   function changeColorIndex() {
     setColorIndex((prevValue) => {
-      return prevValue == 2 ? 0 : prevValue + 1;
+      return prevValue == colors.length-1 ? 0 : prevValue + 1;
     });
   }
 
