@@ -5,8 +5,6 @@ Welcome to Definitely Not Keep, a clone of Google Keep Notes using React.js
 
 ![](images/tutorial.gif)
 
-![](images/interface.png)
-
 -----
 ### Files/Run
 
