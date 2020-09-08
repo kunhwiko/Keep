@@ -11,7 +11,7 @@ function Note(props) {
 
   function changeColorIndex() {
     setColorIndex((prevValue) => {
-      return prevValue == colors.length-1 ? 0 : prevValue + 1;
+      return prevValue === colors.length-1 ? 0 : prevValue + 1;
     });
   }
 
