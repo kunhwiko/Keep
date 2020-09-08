@@ -1,16 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
 
 function Note(props) {
+  const [colorIndex, setColorIndex] = useState(0);
+  const colors = ["#f5ba13","#FFB6C1","#00FF00"];
+
   function handleClick() {
     props.onDelete(props.id);
   }
 
+  function changeColorIndex() {
+    setColorIndex((prevValue) => {
+      return prevValue == 2 ? 0 : prevValue + 1;
+    });
+  }
+
   return (
-    <div className="note">
+    <div style = {{backgroundColor:colors[colorIndex]}} className="note">
+      <button style = {{backgroundColor:colors[colorIndex]}} className="color-button" onClick={changeColorIndex}></button>
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-      <button onClick={handleClick}>
+      <button style = {{backgroundColor:colors[colorIndex]}} className="delete-button" onClick={handleClick}>
         <DeleteIcon />
       </button>
     </div>

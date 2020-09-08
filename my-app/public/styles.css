@@ -57,18 +57,29 @@ footer p {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
-.note button {
+.delete-button {
   position: relative;
-  right: -10px;
+  top : -5px;
   float: right;
   margin-right: 5px;
-  background : #fff;
-  color: #ccc;
+  color: rgb(0, 0, 0);
   border: none;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   outline: none;
+}
+.color-button {
+  position: relative;
+  left : -14px;
+  top : -17px;
+  background: #f5ba13;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); 
 }
 
 form.create-note {
@@ -103,18 +114,4 @@ form.create-note button {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   outline: none;
-}
-.colorSelector {
-  position: absolute;
-  left: 18px;
-  bottom: 8px;
-  background: #f5ba13;
-  color: rgb(0, 0, 0);
-  border: none;
-  border-radius: 50%;
-  width: 14px;
-  height: 14px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  outline: none;  
 }
